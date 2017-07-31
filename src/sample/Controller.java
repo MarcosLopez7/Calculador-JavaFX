@@ -1,17 +1,14 @@
 package sample;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-
-import java.awt.event.ActionEvent;
-
 
 public class Controller {
 
     private String expression = "";
     @FXML
     private Label label;
-
 
     public void addNine(ActionEvent event) {
         expression += "9";
@@ -58,6 +55,11 @@ public class Controller {
         label.setText(expression);
     }
 
+    public void addZero(ActionEvent event) {
+        expression += "0";
+        label.setText(expression);
+    }
+
     public void addDivition(ActionEvent event) {
         expression += "/";
         label.setText(expression);
@@ -76,5 +78,29 @@ public class Controller {
     public void addSum(ActionEvent event) {
         expression += "+";
         label.setText(expression);
+    }
+
+    public void addOpenBracket(ActionEvent event) {
+        expression += "(";
+        label.setText(expression);
+    }
+
+    public void addCloseBracket(ActionEvent event) {
+        expression += ")";
+        label.setText(expression);
+    }
+
+    public void addPow(ActionEvent event) {
+        expression += "^";
+        label.setText(expression);
+    }
+
+    public void Clear(ActionEvent event) {
+        expression = "";
+        label.setText(expression);
+    }
+
+    public void calculate(ActionEvent event) {
+
     }
 }

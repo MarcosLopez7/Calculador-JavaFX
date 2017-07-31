@@ -17,46 +17,47 @@
       <RowConstraints />
       <RowConstraints />
       <RowConstraints />
+      <RowConstraints />
    </rowConstraints>
    <children>
-      <Label prefHeight="35.0" prefWidth="275.0" text="0" />
+      <Label fx:id="label" prefHeight="35.0" prefWidth="275.0" text="0" />
       <HBox prefHeight="35.0" prefWidth="275.0" GridPane.rowIndex="1">
          <children>
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="(" />
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text=")" />
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="C" />
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="^" />
+            <Button mnemonicParsing="false" onAction="#addOpenBracket" prefHeight="35.0" prefWidth="70.0" text="(" />
+            <Button mnemonicParsing="false" onAction="#addCloseBracket" prefHeight="35.0" prefWidth="70.0" text=")" />
+            <Button mnemonicParsing="false" onAction="#Clear" prefHeight="35.0" prefWidth="70.0" text="C" />
+            <Button mnemonicParsing="false" onAction="#addPow" prefHeight="35.0" prefWidth="70.0" text="^" />
          </children>
       </HBox>
       <HBox prefHeight="35.0" prefWidth="275.0" GridPane.rowIndex="2">
          <children>
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="7" />
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="8" />
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="9" />
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="/" />
+            <Button mnemonicParsing="false" onAction="#addSeven" prefHeight="35.0" prefWidth="70.0" text="7" />
+            <Button mnemonicParsing="false" onAction="#addEight" prefHeight="35.0" prefWidth="70.0" text="8" />
+            <Button mnemonicParsing="false" onAction="#addNine" prefHeight="35.0" prefWidth="70.0" text="9" />
+            <Button mnemonicParsing="false" onAction="#addDivition" prefHeight="35.0" prefWidth="70.0" text="/" />
          </children>
       </HBox>
       <HBox prefHeight="35.0" prefWidth="275.0" GridPane.rowIndex="3">
          <children>
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="4" />
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="5" />
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="6" />
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="X" />
+            <Button mnemonicParsing="false" onAction="#addFour" prefHeight="35.0" prefWidth="70.0" text="4" />
+            <Button mnemonicParsing="false" onAction="#addFive" prefHeight="35.0" prefWidth="70.0" text="5" />
+            <Button mnemonicParsing="false" onAction="#addSix" prefHeight="35.0" prefWidth="70.0" text="6" />
+            <Button mnemonicParsing="false" onAction="#addMultiplication" prefHeight="35.0" prefWidth="70.0" text="X" />
          </children>
       </HBox>
       <HBox prefHeight="35.0" prefWidth="275.0" GridPane.rowIndex="4">
          <children>
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="1" />
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="2" />
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="3" />
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="-" />
+            <Button mnemonicParsing="false" onAction="#addOne" prefHeight="35.0" prefWidth="70.0" text="1" />
+            <Button mnemonicParsing="false" onAction="#addTwo" prefHeight="35.0" prefWidth="70.0" text="2" />
+            <Button mnemonicParsing="false" onAction="#addThree" prefHeight="35.0" prefWidth="70.0" text="3" />
+            <Button mnemonicParsing="false" onAction="#addSubtration" prefHeight="35.0" prefWidth="70.0" text="-" />
          </children>
       </HBox>
       <HBox prefHeight="35.0" prefWidth="275.0" GridPane.rowIndex="5">
          <children>
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="140.0" text="0" />
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="=" />
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="+" />
+            <Button mnemonicParsing="false" onAction="#addZero" prefHeight="35.0" prefWidth="140.0" text="0" />
+            <Button mnemonicParsing="false" onAction="#calculate" prefHeight="35.0" prefWidth="70.0" text="=" />
+            <Button mnemonicParsing="false" onAction="#addSum" prefHeight="35.0" prefWidth="70.0" text="+" />
          </children>
       </HBox>
    </children>
