@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane alignment="center" hgap="10" prefHeight="275" prefWidth="300" vgap="10" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="10" prefHeight="300" prefWidth="300" vgap="10" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
@@ -22,13 +22,21 @@
       <Label prefHeight="35.0" prefWidth="275.0" text="0" />
       <HBox prefHeight="35.0" prefWidth="275.0" GridPane.rowIndex="1">
          <children>
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="(" />
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text=")" />
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="C" />
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="^" />
+         </children>
+      </HBox>
+      <HBox prefHeight="35.0" prefWidth="275.0" GridPane.rowIndex="2">
+         <children>
             <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="7" />
             <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="8" />
             <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="9" />
             <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="/" />
          </children>
       </HBox>
-      <HBox prefHeight="35.0" prefWidth="275.0" GridPane.rowIndex="2">
+      <HBox prefHeight="35.0" prefWidth="275.0" GridPane.rowIndex="3">
          <children>
             <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="4" />
             <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="5" />
@@ -36,7 +44,7 @@
             <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="X" />
          </children>
       </HBox>
-      <HBox prefHeight="35.0" prefWidth="275.0" GridPane.rowIndex="3">
+      <HBox prefHeight="35.0" prefWidth="275.0" GridPane.rowIndex="4">
          <children>
             <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="1" />
             <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="2" />
@@ -44,7 +52,7 @@
             <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="-" />
          </children>
       </HBox>
-      <HBox prefHeight="35.0" prefWidth="275.0" GridPane.rowIndex="4">
+      <HBox prefHeight="35.0" prefWidth="275.0" GridPane.rowIndex="5">
          <children>
             <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="140.0" text="0" />
             <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="=" />
