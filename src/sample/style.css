@@ -1,0 +1,21 @@
+/* CSS PARA DECORAR CALCULADORA */
+
+.root {
+    -fx-background-color: lightseagreen;
+}
+
+.label {
+    -fx-background-color: white;
+    -fx-text-fill: lightseagreen;
+    -fx-font-size: 25px;
+    -fx-alignment: center;
+}
+
+.button {
+    -fx-background-color: white;
+    -fx-text-fill: lightseagreen;
+    -fx-padding: 5px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+    -fx-font-size: 15px;
+}
