@@ -55,7 +55,8 @@
       </HBox>
       <HBox prefHeight="35.0" prefWidth="275.0" GridPane.rowIndex="5">
          <children>
-            <Button mnemonicParsing="false" onAction="#addZero" prefHeight="35.0" prefWidth="140.0" text="0" />
+            <Button mnemonicParsing="false" onAction="#addZero" prefHeight="35.0" prefWidth="70.0" text="0" />
+            <Button mnemonicParsing="false" onAction="#addDot" prefHeight="35.0" prefWidth="70.0" text="." />
             <Button mnemonicParsing="false" onAction="#calculate" prefHeight="35.0" prefWidth="70.0" text="=" />
             <Button mnemonicParsing="false" onAction="#addSum" prefHeight="35.0" prefWidth="70.0" text="+" />
          </children>

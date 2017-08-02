@@ -95,12 +95,18 @@ public class Controller {
         label.setText(expression);
     }
 
-    public void Clear(ActionEvent event) {
-        expression = "";
+    public void addDot(ActionEvent event) {
+        expression += ".";
         label.setText(expression);
     }
 
-    public void calculate(ActionEvent event) {
+    public void Clear(ActionEvent event) {
+        expression = "";
+        label.setText("0");
+    }
 
+    public void calculate(ActionEvent event) {
+        CalculatorModel calculator = new CalculatorModel(expression);
+        label.setText(calculator.calculate());
     }
 }
